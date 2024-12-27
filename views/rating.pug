@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= 'Rating of ganres'
+  body(style="background: #91ff003b;")
+    h1(style="text-align: center")= "Rating of ganres"
+    ol(style="display: flex;flex-direction:row;justify-content: space-between; flex-wrap: wrap;")
+          each val in movies
+            li(style=" flex-basis: 25%;")
+              h3= `Genres - ${val._id} `
+              h3= `Rating - ${val.averageRating}`
